@@ -1,5 +1,7 @@
 # CellCheck
 
+<img width="3264" height="1840" alt="pexels-fayette-reynolds-m-s-181007507-11198521" src="https://github.com/user-attachments/assets/bc2e8c26-caf6-4300-b4fe-ebbabde1b33f" />
+
 An open benchmark that tests whether a model's gene embeddings predict what happens to a cell when genes are perturbed,
 better than simple rules and better than controls that carry no gene information.
 
