@@ -1,0 +1,9 @@
+cff-version: 1.2.0
+message: "If you use CellCheck, please cite it as below."
+title: "CellCheck: an open benchmark for gene-perturbation prediction"
+type: software
+authors:
+  - name: "Rumi"
+repository-code: "https://github.com/sufirumii/cellcheck"
+license: MIT
+date-released: "2026-11-07"

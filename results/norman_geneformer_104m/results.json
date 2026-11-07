@@ -1,0 +1,32 @@
+{
+  "tool": "cellcheck",
+  "version": "0.1.0",
+  "embedding": "geneformer",
+  "dataset": {
+    "name": "Norman et al. 2019 (CRISPR activation screen), loaded with pertpy",
+    "n_cells": 111255,
+    "n_genes_in_data": 19018,
+    "n_shared_genes": 13534,
+    "n_single_perturbations": 101,
+    "n_double_perturbations": 125,
+    "n_test_doubles_per_split": 62
+  },
+  "n_splits": 30,
+  "noise_floor_rmse": 0.0171,
+  "paired": {
+    "model_vs_shuffled": {
+      "mean_improvement": 0.0002,
+      "range_95_low": -0.0008,
+      "range_95_high": 0.0007,
+      "better_in_fraction_of_splits": 0.80
+    },
+    "model_vs_scaled_additive": {
+      "mean_improvement": 0.0018,
+      "range_95_low": 0.0006,
+      "range_95_high": 0.0028,
+      "better_in_fraction_of_splits": 1.00
+    },
+    "scale_learned": {"mean": 0.774, "min": 0.741, "max": 0.807}
+  },
+  "provenance": "Produced by notebooks/02_norman_benchmark.ipynb on one Kaggle T4 GPU session. Values are copied from the printed output of the 30-split cell, rounded to four decimals. The per-split table stays in that notebook's output folder and is not stored here; 'cellcheck run' regenerates it."
+}

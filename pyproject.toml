@@ -1,0 +1,33 @@
+[build-system]
+requires = ["setuptools>=68"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "cellcheck"
+version = "0.1.0"
+description = "An open benchmark for gene-perturbation prediction: do models beat simple methods and controls?"
+readme = "README.md"
+requires-python = ">=3.10"
+license = { text = "MIT" }
+dependencies = [
+  "numpy",
+  "pandas",
+  "scipy",
+  "scikit-learn",
+  "anndata",
+  "matplotlib",
+]
+
+[project.optional-dependencies]
+geneformer = ["torch", "transformers", "huggingface_hub"]
+data = ["pertpy"]
+dev = ["pytest"]
+
+[project.scripts]
+cellcheck = "cellcheck.cli:main"
+
+[tool.setuptools.packages.find]
+where = ["src"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]

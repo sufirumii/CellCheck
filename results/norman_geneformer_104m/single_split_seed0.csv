@@ -1,0 +1,7 @@
+method,rmse,delta_corr,beats_additive_pct
+additive (reference),0.0335,0.8786,
+scaled additive (scale 0.733),0.0316,0.8786,
+ridge + geneformer,0.0290,0.8899,82.26
+ridge + shuffled geneformer (mean of 20),0.0298,,
+ridge + random,0.0305,0.8823,70.97
+ridge + one_hot,0.0304,0.8818,70.97

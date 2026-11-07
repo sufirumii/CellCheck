@@ -1,0 +1,7 @@
+method,mean_rmse,std_across_splits,gap_to_floor_closed_pct
+no_change,0.0585,0.0020,-153.9034
+additive,0.0334,0.0010,0.0000
+scaled_additive,0.0301,0.0009,20.1594
+random,0.0292,0.0010,25.8120
+shuffled,0.0284,0.0008,30.5159
+geneformer,0.0283,0.0007,31.4811
